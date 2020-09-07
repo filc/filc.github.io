@@ -197,7 +197,7 @@
       <div class="text-white">
         <a href="mailto:filcnaplo.hu@gmail.com" class="text-white redhat align-items-center">
           <img src="/assets/img/icons/mail.svg" alt="email" class="mr-2" />
-          <span>filcnaplo.hu@gmail.com</span>
+          <span>filcnaplo@filcnaplo.hu</span>
         </a>
       </div>
 
@@ -228,7 +228,34 @@
           <span>patreon.com/filcnaplo</span>
         </a>
       </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Vissza a lap tetejére</button>
 
+      
+        <strong></strong></div>
+      
+      <script>
+      
+      var mybutton = document.getElementById("myBtn");
+      
+      
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+      
+        
       <div class="text-white">
         <a href="https://filcnaplo.hu/privacy" class="text-white redhat align-items-center">
           <img src="/assets/img/icons/lock.svg" alt="Privacy" class="mr-2" />
@@ -247,7 +274,7 @@
       setTimeout(() => {
         document.querySelector("body").insertAdjacentHTML('afterBegin', `
         <div class= "alert alert-warning alert-dismissible fade show mb-0" role = "alert">
-          Ha szeretnéd, hogy a Filc Napló az App Storebe is bekerüljön,
+          Segíts te is, hogy a Filc Napló fenn maradhasson Apple AppStoreban,
           <a href="https://patreon.com/filcnaplo" class="alert-link">támogass Patreonon.</a>
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
