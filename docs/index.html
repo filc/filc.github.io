@@ -27,252 +27,229 @@
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Red+Hat+Text:400,500,700" />
-  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assest/style.css" />
 </head>
 
 <body>
-  <div class="firstPanel">
-    <nav class="navbar navbar-dark navbar-expand-md pt-3">
-      <div class="container-fluid">
-        <a class="navbar-brand redhat" href="#"><strong>Filc Napló</strong></a><button data-toggle="collapse"
-          class="navbar-toggler" data-target="#navcol-1">
-          <span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navcol-1">
-          <ul class="nav navbar-nav ml-md-auto">
-            <li class="nav-item currentPage" role="presentation">
-              <a class="nav-link active redhat fw-medium" href="/">Kezdőlap</a>
-            </li>
-            <li class="nav-item redhat" role="presentation">
-              <a class="nav-link" href="/downloads">Letöltések</a>
-            </li>
-            <!-- <li class="nav-item redhat" role="presentation">
+  <div class="text">
+    <div class="firstPanel">
+      <nav class="navbar navbar-dark navbar-expand-md pt-3">
+        <div class="container-fluid">
+          <a class="navbar-brand redhat" href="#"><strong>Filc Napló</strong></a><button data-toggle="collapse"
+            class="navbar-toggler" data-target="#navcol-1">
+            <span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav ml-md-auto">
+              <li class="nav-item currentPage" role="presentation">
+                <a class="nav-link active redhat fw-medium" href="/">Kezdőlap</a>
+              </li>
+              <li class="nav-item redhat" role="presentation">
+                <a class="nav-link" href="/downloads">Letöltések</a>
+              </li>
+              <!-- <li class="nav-item redhat" role="presentation">
               <a class="nav-link" href="https://filcnaplo.hu/stats">Statisztika</a>
             </li> -->
-            <li class="nav-item redhat" role="presentation">
-              <a class="nav-link" href="https://github.com/filcnaplo/filcnaplo">GitHub</a>
-            </li>
-          </ul>
+              <li class="nav-item redhat" role="presentation">
+                <a class="nav-link" href="https://github.com/filcnaplo/filcnaplo">GitHub</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    <div class="d-flex mainContainer align-items-center pb-5">
-      <div class="container" style="align-self: center;">
-        <div class="row m-3">
-          <div class="col-md text-center mt-3">
-            <div class="text-left">
-              <h1 class="text-left redhat text-white font-weight-bold mb-4">
-                Egy nem hivatalos alkalmazás az E-Kréta rendszerhez
-              </h1>
-              <button class="btn redhat downloadButton text-white d-inline-flex align-items-center" type="button"
-                onclick="javascript:window.open('https://play.google.com/store/apps/details?id=hu.filcnaplo.ellenorzo')">
-                <img src="/assets/img/icons/download.svg" alt="Letöltés" class="mr-2" />
-                Letöltés
-              </button>
-              <a class="btn redhat text-white d-inline-flex moreInfo align-items-center" type="button" href="#more"
-                style="border-radius: 32px; border: solid 0px;">
-                <img src="/assets/img/icons/more.svg" alt="Több infó" class="mr-2" />
-                Több infó
-              </a>
+      </nav>
+      <div class="d-flex mainContainer align-items-center pb-5">
+        <div class="container" style="align-self: center;">
+          <div class="row m-3">
+            <div class="col-md text-center mt-3">
+              <div class="text-left">
+                <h1 class="text-left redhat text-white font-weight-bold mb-4">
+                  Egy nem hivatalos alkalmazás az E-Kréta rendszerhez
+                </h1>
+                <button class="btn redhat downloadButton text-white d-inline-flex align-items-center" type="button"
+                  onclick="javascript:window.open('https://play.google.com/store/apps/details?id=hu.filcnaplo.ellenorzo')">
+                  <img src="/assets/img/icons/download.svg" alt="Letöltés" class="mr-2" />
+                  Letöltés
+                </button>
+                <a class="btn redhat text-white d-inline-flex moreInfo align-items-center" type="button" href="#more"
+                  style="border-radius: 32px; border: solid 0px;">
+                  <img src="/assets/img/icons/more.svg" alt="Több infó" class="mr-2" />
+                  Több infó
+                </a>
+              </div>
+            </div>
+            <div class="col-md text-center mt-4">
+              <img src="/assets/img/filc_mock.webp" alt="Filc Napló képernyőkép" class="mainImage w-75" />
             </div>
           </div>
-          <div class="col-md text-center mt-4">
-            <img src="/assets/img/filc_mock.webp" alt="Filc Napló képernyőkép" class="mainImage w-75" />
-          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="mt-5" id="more">
-    <div class="container">
-      <div class="row">
-        <div class="col-md d-lg-flex justify-content-lg-center align-items-lg-center">
-          <img src="/assets/img/showcase/interface.svg" alt="Filc Napló mockup" class="showcase" />
-        </div>
-
-        <div class="col-md d-lg-flex align-items-lg-center">
-          <div>
-            <h1 class="d-lg-flex redhat">
-              Modern, könnyen kezelhető felület
-            </h1>
-            <p>
-              Szinte minden elérhető egy mozdulattal: jegyek, órarend, üzenetek, hiányzások…
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="mt-5">
-    <div class="container">
-      <div class="row reverse">
-        <div class="col-md d-lg-flex align-items-lg-center">
-          <img src="/assets/img/showcase/plan.svg" alt="Mockup of Filc Napló" class="showcase" />
-        </div>
-
-        <div class="col-md d-lg-flex justify-content-lg-center align-items-lg-center">
-          <div>
-            <h1 class="redhat">
-              Tervezd meg a napod
-            </h1>
-            <p>
-              Az appban egy csoportban láthatod az iskolák három problémáját: az órákat, a házikat, és a dolgozatokat,
-              így könnyen áttekintheted a napi teendőidet.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div style="background-color: #212121;">
-    <div class="mt-5 dark">
+    <div class="mt-5" id="more">
       <div class="container">
         <div class="row">
           <div class="col-md d-lg-flex justify-content-lg-center align-items-lg-center">
-            <img src="/assets/img/showcase/notify.svg" alt="Filc Napló mockup" class="showcase" />
+            <img src="/assets/img/showcase/interface.svg" alt="Filc Napló mockup" class="showcase" />
           </div>
 
           <div class="col-md d-lg-flex align-items-lg-center">
             <div>
-              <h1 class="redhat">
-                Értesülj mindenről gyorsan
+              <h1 class="d-lg-flex redhat">
+                Modern, könnyen kezelhető felület
               </h1>
               <p>
-                A főoldalon időrendi sorrendben láthatod a legfontosabb eseményeket, például a jegyeket. Elég megnyitnod
-                az alkalmazást, és meg is csodálhatod az új ötöseidet.
+                Szinte minden elérhető egy mozdulattal: jegyek, órarend, üzenetek, hiányzások…
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="mt-5 light">
+    <div class="mt-5">
       <div class="container">
         <div class="row reverse">
-          <div class="col-md d-lg-flex justify-content-lg-center align-items-lg-center">
-            <img src="/assets/img/showcase/customize.svg" alt="Filc Napló mockup" class="showcase" />
+          <div class="col-md d-lg-flex align-items-lg-center">
+            <img src="/assets/img/showcase/plan.svg" alt="Mockup of Filc Napló" class="showcase" />
           </div>
 
-          <div class="col-md d-lg-flex align-items-lg-center text-white">
+          <div class="col-md d-lg-flex justify-content-lg-center align-items-lg-center">
             <div>
-              <h1 class="redhat text-white">
-                Maximálisan testreszabható
+              <h1 class="redhat">
+                Tervezd meg a napod
               </h1>
               <p>
-                A Filc minden részét személyre szabhatod. Az egyhangú kréta-kék bámulásának vége.
+                Az appban egy csoportban láthatod az iskolák három problémáját: az órákat, a házikat, és a dolgozatokat,
+                így könnyen áttekintheted a napi teendőidet.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="mt-5 footer-top">
-    <div class="container">
-      <div class="p-4 text-center">
-        <img src="/assets/img/filclite.webp" alt="Filc Lite" width="200px" class="filclite">
-      </div>
-      <div class="col-md d-lg-flex justify-content-lg-center align-items-lg-center">
-        <div>
-          <h1 class="redhat text-center">
-            Nincs elég kakaó?
-          </h1>
-          <h4 class="text-center">
-            Próbáld ki a Filc Lite-ot! A Filc Lite egy pehelykönnyű, minimális KRÉTA kliens a Filc-től.
-            <i>Hamarosan</i>
-          </h4>
+    <div style="background-color: #212121;">
+      <div class="mt-5 dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md d-lg-flex justify-content-lg-center align-items-lg-center">
+              <img src="/assets/img/showcase/notify.svg" alt="Filc Napló mockup" class="showcase" />
+            </div>
 
-          <button class="btn redhat downloadButton text-white align-items-center mx-auto d-flex" type="button"
-            onclick="javascript:window.open('https://play.google.com/store/apps/details?id=hu.filcnaplo.ellenorzo.lite')">
-            <img src="/assets/img/icons/download.svg" alt="" class=" -download mr-2" />
-            Letöltés
-          </button>
+            <div class="col-md d-lg-flex align-items-lg-center">
+              <div>
+                <h1 class="redhat">
+                  Értesülj mindenről gyorsan
+                </h1>
+                <p>
+                  A főoldalon időrendi sorrendben láthatod a legfontosabb eseményeket, például a jegyeket. Elég
+                  megnyitnod
+                  az alkalmazást, és meg is csodálhatod az új ötöseidet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 light">
+        <div class="container">
+          <div class="row reverse">
+            <div class="col-md d-lg-flex justify-content-lg-center align-items-lg-center">
+              <img src="/assets/img/showcase/customize.svg" alt="Filc Napló mockup" class="showcase" />
+            </div>
+
+            <div class="col-md d-lg-flex align-items-lg-center text-white">
+              <div>
+                <h1 class="redhat text-white">
+                  Maximálisan testreszabható
+                </h1>
+                <p>
+                  A Filc minden részét személyre szabhatod. Az egyhangú kréta-kék bámulásának vége.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+    <div class="mt-5 footer-top">
+      <div class="container">
+        <div class="p-4 text-center">
+          <img src="/assets/img/filclite.webp" alt="Filc Lite" width="200px" class="filclite">
+        </div>
+        <div class="col-md d-lg-flex justify-content-lg-center align-items-lg-center">
+          <div>
+            <h1 class="redhat text-center">
+              Nincs elég kakaó?
+            </h1>
+            <h4 class="text-center">
+              Próbáld ki a Filc Lite-ot! A Filc Lite egy pehelykönnyű, minimális KRÉTA kliens a Filc-től.
+              <i>Hamarosan</i>
+            </h4>
 
-  <div class="pb-4 footer-wrapper" style="background-color: #132c27;">
-    <div class="footer">
-      <div class="text-white">
-        <a href="mailto:filcnaplo.hu@gmail.com" class="text-white redhat align-items-center">
-          <img src="/assets/img/icons/mail.svg" alt="email" class="mr-2" />
-          <span>filcnaplo@filcnaplo.hu</span>
-        </a>
-      </div>
-
-      <div class="text-white">
-        <a href="https://filcnaplo.hu/discord" class="text-white redhat align-items-center">
-          <img src="/assets/img/icons/discord.svg" alt="GitHub" class="mr-2" />
-          <span>Discord</span>
-        </a>
-      </div>
-
-      <div class="text-white">
-        <a href="https://instagram.com/filcnaplo" class="text-white redhat align-items-center">
-          <img src="/assets/img/icons/instagram.svg" alt="Instagram" class="mr-2" />
-          <span>@filcnaplo</span>
-        </a>
-      </div>
-
-      <div class="text-white">
-        <a href="https://twitch.tv/filcnaplo" class="text-white redhat align-items-center">
-          <img src="/assets/img/icons/twitch.svg" alt="Twitch" class="mr-2" />
-          <span>twitch.tv/filcnaplo</span>
-        </a>
-      </div>
-
-      <div class="text-white">
-        <a href="https://patreon.com/filcnaplo" class="text-white redhat align-items-center">
-          <img src="/assets/img/icons/patreon.svg" alt="Patreon" class="mr-2" />
-          <span>patreon.com/filcnaplo</span>
-        </a>
-      </div>
-      <button onclick="topFunction()" id="myBtn" title="Go to top">Vissza a lap tetejére</button>
-
-      
-        <strong></strong></div>
-      
-      <script>
-      
-      var mybutton = document.getElementById("myBtn");
-      
-      
-      window.onscroll = function() {scrollFunction()};
-      
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-      
-      
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-      </script>
-      
-        
-      <div class="text-white">
-        <a href="https://filcnaplo.hu/privacy" class="text-white redhat align-items-center">
-          <img src="/assets/img/icons/lock.svg" alt="Privacy" class="mr-2" />
-          <span>Adatvédelem</span>
-        </a>
+            <button class="btn redhat downloadButton text-white align-items-center mx-auto d-flex" type="button"
+              onclick="javascript:window.open('https://play.google.com/store/apps/details?id=hu.filcnaplo.ellenorzo.lite')">
+              <img src="/assets/img/icons/download.svg" alt="" class=" -download mr-2" />
+              Letöltés
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="text-muted text-center mt-4 w-100">
-      <span>© 2020 • Filc Napló</span>
+
+    <div class="pb-4 footer-wrapper" style="background-color: #132c27;">
+      <div class="footer">
+        <div class="text-white">
+          <a href="mailto:filcnaplo.hu@gmail.com" class="text-white redhat align-items-center">
+            <img src="/assets/img/icons/mail.svg" alt="email" class="mr-2" />
+            <span>filcnaplo@filcnaplo.hu</span>
+          </a>
+        </div>
+
+        <div class="text-white">
+          <a href="https://filcnaplo.hu/discord" class="text-white redhat align-items-center">
+            <img src="/assets/img/icons/discord.svg" alt="GitHub" class="mr-2" />
+            <span>Discord</span>
+          </a>
+        </div>
+
+        <div class="text-white">
+          <a href="https://instagram.com/filcnaplo" class="text-white redhat align-items-center">
+            <img src="/assets/img/icons/instagram.svg" alt="Instagram" class="mr-2" />
+            <span>@filcnaplo</span>
+          </a>
+        </div>
+
+        <div class="text-white">
+          <a href="https://twitch.tv/filcnaplo" class="text-white redhat align-items-center">
+            <img src="/assets/img/icons/twitch.svg" alt="Twitch" class="mr-2" />
+            <span>twitch.tv/filcnaplo</span>
+          </a>
+        </div>
+
+        <div class="text-white">
+          <a href="https://patreon.com/filcnaplo" class="text-white redhat align-items-center">
+            <img src="/assets/img/icons/patreon.svg" alt="Patreon" class="mr-2" />
+            <span>patreon.com/filcnaplo</span>
+          </a>
+        </div>
+
+        <div class="text-white">
+          <a href="https://filcnaplo.hu/privacy" class="text-white redhat align-items-center">
+            <img src="/assets/img/icons/lock.svg" alt="Privacy" class="mr-2" />
+            <span>Adatvédelem</span>
+          </a>
+        </div>
+      </div>
+      <div class="text-muted text-center mt-4 w-100">
+        <span>© 2020 • Filc Napló</span>
+      </div>
     </div>
-  </div>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-  <script>
-    if (document.cookie == "") {
-      setTimeout(() => {
-        document.querySelector("body").insertAdjacentHTML('afterBegin', `
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+      if (document.cookie == "") {
+        setTimeout(() => {
+          document.querySelector("body").insertAdjacentHTML('afterBegin', `
         <div class= "alert alert-warning alert-dismissible fade show mb-0" role = "alert">
           Segíts te is, hogy a Filc Napló fenn maradhasson Apple AppStoreban,
           <a href="https://patreon.com/filcnaplo" class="alert-link">támogass Patreonon.</a>
@@ -280,10 +257,20 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>`);
-      }, 1200);
-      document.cookie = 'close_alert=1';
-    }
-  </script>
+        }, 1200);
+        document.cookie = 'close_alert=1';
+      }
+    </script>
+  </div>
+
 </body>
+<a class="arrow" href="#">
+  <i><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 30" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-chevrons-up">
+      <polyline points="17 11 12 6 7 11"></polyline>
+      <polyline points="17 18 12 13 7 18"></polyline>
+    </svg></i>
+</a>
 
 </html>
