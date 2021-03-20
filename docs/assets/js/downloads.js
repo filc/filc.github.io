@@ -243,7 +243,7 @@ getReleases().then((releases) => {
   }
 
   for (let release of releases) {
-    if (!addedFirst) {
+    if (!addedFirst && !release.prerelease) {
       addedFirst = true;
       addFirstRelease(release);
     } else {
