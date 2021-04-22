@@ -67,6 +67,11 @@ getReleases().then((releases) => {
                     <span>GitHub</span></a>
                     </div>
 
+                    <div class="col download-count" style="white-space: nowrap;">
+                    <img src="../assets/img/icons/downloads.svg" alt="Letöltések" style="color:#212121" class="mr-1">
+                    <span>${release.assets[0].download_count}</span>
+                    </div>
+
                     <div class="col" >
                     <a href="${
       release.assets[0]
@@ -75,7 +80,7 @@ getReleases().then((releases) => {
       }" class="btn downloadButton text-white d-inline align-items-center mobileMarginLeft" style="white-space: nowrap; ${
       release.assets[0] ? "" : "display: none !important"
       }">
-                    <img src="../assets/img/icons/downloads.svg" alt="Download" class="mr-1">
+                    <img src="../assets/img/icons/download.svg" alt="Download" class="mr-1">
                     <span>Letöltés</span></a>
                     </div>
 
@@ -132,6 +137,11 @@ getReleases().then((releases) => {
                     <span>GitHub</span></a>
                     </div>
 
+                    <div class="col download-count" style="white-space: nowrap;">
+                    <img src="../assets/img/icons/downloads.svg" alt="Letöltések" style="color:#212121" class="mr-1">
+                    <span>${release.assets[0].download_count}</span>
+                    </div>
+
                     <div class="col" >
                     <a href="${
       release.assets[0]
@@ -140,7 +150,7 @@ getReleases().then((releases) => {
       }" class="btn downloadButton text-white d-inline align-items-center mobileMarginLeft" style="white-space: nowrap; ${
       release.assets[0] ? "" : "display: none !important"
       }">
-                    <img src="../assets/img/icons/downloads.svg" alt="Download" class="mr-1">
+                    <img src="../assets/img/icons/download.svg" alt="Download" class="mr-1">
                     <span>Letöltés</span></a>
                     </div>
 
@@ -196,6 +206,11 @@ getReleases().then((releases) => {
                     <span>GitHub</span></a>
                     </div>
 
+                    <div class="col download-count" style="white-space: nowrap;">
+                    <img src="../assets/img/icons/downloads.svg" alt="Letöltések" style="color:#212121" class="mr-1">
+                    <span>${release.assets[0].download_count}</span>
+                    </div>
+
                     <div class="col" >
                     <a href="${
       release.assets[0]
@@ -204,7 +219,7 @@ getReleases().then((releases) => {
       }" class="btn downloadButton text-white d-inline align-items-center mobileMarginLeft" style="white-space: nowrap; ${
       release.assets[0] ? "" : "display: none !important"
       }">
-                    <img src="../assets/img/icons/downloads.svg" alt="Download" class="mr-1">
+                    <img src="../assets/img/icons/download.svg" alt="Download" class="mr-1">
                     <span>Letöltés</span></a>
                     </div>
 
