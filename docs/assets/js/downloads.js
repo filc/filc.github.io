@@ -259,19 +259,13 @@ getReleases().then((releases) => {
     latestPrereleaseContainer.append(releaseElement);
   }
 
-  // meh code
-
-  console.log("hello 2");
-
   let stableDate = releases.find((r) => !r.prerelease).published_at;
-  console.log(stableDate);
 
   for (let release of releases) {
     if (!addedFirst && !release.prerelease) {
       addedFirst = true;
       addFirstRelease(release);
     } else {
-      console.log(release.published_at);
       if (release.prerelease && !addedBeta && release.published_at > stableDate) {
         addPrerelease(release);
         addedBeta = true;
