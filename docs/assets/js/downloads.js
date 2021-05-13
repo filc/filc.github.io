@@ -261,9 +261,9 @@ getReleases().then((releases) => {
 
   // meh code
 
-  console.log("hello 1");
+  console.log("hello 2");
 
-  let stableDate = releases.find((r) => !r.prerelease).release_date;
+  let stableDate = releases.find((r) => !r.prerelease).published_at;
   console.log(stableDate);
 
   for (let release of releases) {
@@ -271,8 +271,8 @@ getReleases().then((releases) => {
       addedFirst = true;
       addFirstRelease(release);
     } else {
-      console.log(release.release_date);
-      if (release.prerelease && !addedBeta && release.release_date > stableDate) {
+      console.log(release.published_at);
+      if (release.prerelease && !addedBeta && release.published_at > stableDate) {
         addPrerelease(release);
         addedBeta = true;
       } else {
