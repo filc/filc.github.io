@@ -261,13 +261,17 @@ getReleases().then((releases) => {
 
   // meh code
 
+  console.log("hello 1");
+
   let stableDate = releases.find((r) => !r.prerelease).release_date;
+  console.log(stableDate);
 
   for (let release of releases) {
     if (!addedFirst && !release.prerelease) {
       addedFirst = true;
       addFirstRelease(release);
     } else {
+      console.log(release.release_date);
       if (release.prerelease && !addedBeta && release.release_date > stableDate) {
         addPrerelease(release);
         addedBeta = true;
